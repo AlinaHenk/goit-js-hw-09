@@ -98,6 +98,8 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  border-radius: 8px;
+  border: #4e75ff;
   background: #4e75ff;
   color: #fff;
   font-family: Montserrat;
