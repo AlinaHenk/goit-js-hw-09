@@ -33,3 +33,78 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.gallery-item {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  background: #fff;
+  align-content: center;
+  gap: 24px;
+  margin-left: 156px;
+  margin-right: 156px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.feedback-form {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+textarea {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
