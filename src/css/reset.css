@@ -34,7 +34,7 @@ img {
   height: auto;
 }
 
-.gallery-item {
+.gallery {
   display: grid;
   grid-template-columns: 360px 360px 360px;
   background: #fff;

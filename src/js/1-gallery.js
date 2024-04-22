@@ -68,7 +68,7 @@ const images = [
   },
 ];
 
-const allImages = document.querySelector(".gallery-item");
+const allImages = document.querySelector(".gallery");
 allImages.innerHTML = "";
 const listImages = images
     .map((image) => {
@@ -77,7 +77,6 @@ const listImages = images
     <a class="gallery-link" href="${original}">
      <img  class="gallery-image"
       src="${preview}"
-      data-source="${original}"
       alt="${description}"
       
     />
@@ -89,8 +88,6 @@ const listImages = images
 
 
 allImages.insertAdjacentHTML("beforeend", listImages);
-
-let gallery = new SimpleLightbox('.gallery-item a');
 
 new SimpleLightbox('.gallery-item a', { captionsData:'alt', captionDelay:250});
 

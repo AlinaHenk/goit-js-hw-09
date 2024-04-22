@@ -15,8 +15,8 @@ if (getLocalStorage()) {
 feedbackForm.addEventListener("input", (event) => {
     if (event.target.value) {
         const feedbackFormState = {
-            email: inputEmail.value,
-            message: inputMessage.value,
+            email: inputEmail.value.trim(),
+            message: inputMessage.value.trim(),
         }
         localStorage.setItem("feedback-form-state", JSON.stringify(feedbackFormState));
     }
@@ -25,7 +25,7 @@ feedbackForm.addEventListener("input", (event) => {
 feedbackForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
-    if (inputEmail.value && inputMessage.value) {
+    if (inputEmail.value.trim() && inputMessage.value.trim()) {
         event.preventDefault();
         console.log(getLocalStorage());
         localStorage.removeItem("feedback-form-state");
